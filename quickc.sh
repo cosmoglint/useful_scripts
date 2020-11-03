@@ -1,3 +1,4 @@
+#!/bin/sh
 #$filename = "$1"
 #$compiledname = "${filename%.*}"
 
@@ -5,3 +6,4 @@
 
 g++ -std=c++17 -Wshadow -Wall -o ${1%.cpp} "$1" -O2 -Wno-unused-result
 ./${1%.cpp}
+rm ${1%.cpp}
