@@ -31,7 +31,7 @@ else
     message=""
     shift
     for x in "$@"
-        do message+="$x"
+        do message+="$x "
     done
 fi
 
