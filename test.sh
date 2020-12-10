@@ -17,7 +17,7 @@ if [ $# -ge 1 ]
     then
         action="FIX: "
     else
-        action="THEN: "
+        action="CHANGE: "
     fi
 else
     action="ADD: "
