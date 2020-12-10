@@ -29,8 +29,9 @@ then
     read -p "enter commit message: $action" message
 else
     message=""
-    for x in {2..$#}
-        do message+="${!x}"
+    shift
+    for x in "$@"
+        do message+="$x"
     done
 fi
 
