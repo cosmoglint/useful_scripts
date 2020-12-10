@@ -7,6 +7,9 @@ if [ $# -ge 1 ]
     elif [ $1 == "bug" ]
     then
         action="BUG: "
+    elif [ $1 == "add" ]
+    then
+        action="ADD: "
     elif [ $1 == "start" ]
     then
         action="START: "
