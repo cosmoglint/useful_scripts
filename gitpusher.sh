@@ -19,8 +19,11 @@ if [ $# -ge 1 ]
     elif [ $1 == "fix" ]
     then
         action="FIX: "
-    else
+    elif [ $1 == "change" ]
+    then
         action="CHANGE: "
+    else
+      action="$1 "
     fi
 else
     action="ADD: "
