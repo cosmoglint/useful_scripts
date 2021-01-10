@@ -17,3 +17,7 @@ I personally like, the following actions on a commit
 quickc.sh and safec.sh are scripts that compile c programs with certain common flags. quick compiles without sanitizers, safec compiles with sanitizers
 
 runner.sh is a script that runs awk files on a usr_bin_data.txt files that I used while learning awk. Although you can achieve the same with awk command it is useful if you want to quickly run multiple files
+
+dockerclean.sh stops all containers and then removes all docker components [containers,networks,volumes,dangling images(except downloaded images)]
+
+dockerreset.sh does everything dockerclean does and then deletes downloaded images too
